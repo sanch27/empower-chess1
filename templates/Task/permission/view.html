@@ -4581,7 +4581,7 @@ License: For each use you must have a valid license purchased only from above li
 												</li>
 												<!--end::Item-->
 												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-600 fw-bold lh-1">Features</li>
+												<li class="breadcrumb-item text-gray-600 fw-bold lh-1">Permission</li>
 												<!--end::Item-->
 												<!--begin::Item-->
 												<li class="breadcrumb-item">
@@ -4596,7 +4596,7 @@ License: For each use you must have a valid license purchased only from above li
 											<!--begin::Page title-->
 											<div class="page-title d-flex align-items-center me-3">
 												<!--begin::Title-->
-												<h1 class="page-heading d-flex text-gray-900 fw-bolder fs-1 flex-column justify-content-center my-0">View Features Details</h1>
+												<h1 class="page-heading d-flex text-gray-900 fw-bolder fs-1 flex-column justify-content-center my-0">View Permission Details</h1>
 												<!--end::Title-->
 											</div>
 											<!--end::Page title-->
@@ -5073,7 +5073,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="card-header mt-6">
 															<!--begin::Card title-->
 															<div class="card-title flex-column">
-																<h2 class="mb-1">Feature's Schedule</h2>
+																<h2 class="mb-1">Permission's Schedule</h2>
 																<div class="fs-6 fw-semibold text-muted">2 upcoming meetings</div>
 															</div>
 															<!--end::Card title-->
@@ -6265,7 +6265,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="card-header mt-6">
 															<!--begin::Card title-->
 															<div class="card-title flex-column">
-																<h2 class="mb-1">Feature's Tasks</h2>
+																<h2 class="mb-1">Role's Tasks</h2>
 																<div class="fs-6 fw-semibold text-muted">Total 25 tasks in backlog</div>
 															</div>
 															<!--end::Card title-->
@@ -6299,16 +6299,16 @@ License: For each use you must have a valid license purchased only from above li
 																<!--end::Details-->
 																<!--begin::Menu-->
 																<td class="text-end">
-    <div class="dropdown">
-        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <details>
+        <summary class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary">
             Actions
             <i class="ki-duotone ki-down fs-5 ms-1"></i>
-        </a>
+        </summary>
         <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="{% url 'user-edit' user.pk %}">Edit</a>
             <a class="dropdown-item" href="{% url 'user-delete' user.pk %}">Delete</a>
         </div>
-    </div>
+    </details>
 </td>
 																<!--begin::Task menu-->
 																<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" data-kt-menu-id="kt-users-tasks">
@@ -6381,7 +6381,8 @@ License: For each use you must have a valid license purchased only from above li
             <a class="dropdown-item" href="{% url 'user-delete' user.pk %}">Delete</a>
         </div>
     </div>
-</td>		<!--begin::Task menu-->
+</td>
+																<!--begin::Task menu-->
 																<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" data-kt-menu-id="kt-users-tasks">
 																	<!--begin::Header-->
 																	<div class="px-7 py-5">
@@ -6585,9 +6586,17 @@ License: For each use you must have a valid license purchased only from above li
 																</div>
 																<!--end::Details-->
 																<!--begin::Menu-->
-																<td class="text-end">
-    <div class="dropdown">
-        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<td class="pe-0">
+    <div class="fw-semibold ms-5">
+        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary"></a>
+        <!--begin::Info-->
+        <div class="fs-7 text-muted">
+            <a href="#">                                          </a></div>
+        <!--end::Info-->
+    </div>
+    <!--begin::Menu-->
+    <div class="dropdown dropdown-end">
+        <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
             Actions
             <i class="ki-duotone ki-down fs-5 ms-1"></i>
         </a>
@@ -6596,6 +6605,7 @@ License: For each use you must have a valid license purchased only from above li
             <a class="dropdown-item" href="{% url 'user-delete' user.pk %}">Delete</a>
         </div>
     </div>
+    <!--end::Task menu-->
 </td>
 																<!--begin::Task menu-->
 																<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" data-kt-menu-id="kt-users-tasks">
