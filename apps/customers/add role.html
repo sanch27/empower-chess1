@@ -4583,7 +4583,7 @@ License: For each use you must have a valid license purchased only from above li
 											<!--begin::Page title-->
 											<div class="page-title d-flex align-items-center me-3">
 												<!--begin::Title-->
-												<h1 class="page-heading d-flex text-gray-900 fw-bolder fs-1 flex-column justify-content-center my-0">Add Role</h1>
+												<h1 class="page-heading d-flex text-gray-900 fw-bolder fs-1 flex-column justify-content-center my-0">Roles Details</h1>
 												<!--end::Title-->
 											</div>
 											<!--end::Page title-->
@@ -4731,68 +4731,64 @@ License: For each use you must have a valid license purchased only from above li
 											<!--end::Card toolbar-->
 										</div>
 										<!--end::Card header-->
-										<!--begin::Card body-->
-										<div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
-                <div class="row">
-                    
-                    
-                        <div class="p-5">
-                            <div class="text-center">
-                               
-                                <div id="general-error-message" class="general-error-message" style="display: none; color: red;"></div>
-                            </div>
-                            <form class="user">
-                                <div class="form-group row">
-                                    
-                                    
-                                </div>
-                                
+										
+											<!--begin::Card-->
+                        <div class="card">
 
-                                 
-                               
-
+							
+                            <!--begin::Card body-->
+                            <div class="card-body">
+                                <!--begin::Heading-->
+                                <div class="card-px text-center pt-15 pb-15">
+                                    <!--begin::Title-->
+                                    <h2 class="fs-2x fw-bold mb-0"></h2>
+											      <!--begin::Form-->
+                                                  <div class="text-center">
+                                                  <form class="form" action="#" id="kt_modal_add_customer_form" data-kt-redirect="{% url 'view_users' %}">
+                                                    <!--begin::Modal header-->
+                                                    <div class="modal-header" id="kt_modal_add_customer_header">
+                                                        <!--begin::Modal title-->
+                                                        <h2 class="fw-bold">Add Role</h2>
+                                                        <!--end::Modal title-->
+                                                    </div>
+                                                    <!--end::Modal header-->
+                                                    <!--begin::Modal body-->
+                                                    <div class="modal-body py-10 px-lg-17">
+                                                            
+                                                            <!--begin::Input group-->
+															<!--begin::Input group-->
+															<div class="d-flex flex-column mb-7 fv-row"> <!--begin::Label--> <label for="roles" class="col-form-label text-start col-lg-12">Role Name </label> <!--end::Label--> <!--begin::Input--> <input type="text" name="role" aria-label="Enter a Role Name" class="form-control form-control-solid fw-bold" placeholder="Enter a Role Name"> <!--end::Input--> </div>
+                                                            <!--end::Input group-->
+                                                                <!--end::Label-->
+                                                                <!--begin::Input-->
                                                                 
-                                
-                                 
-                                
-
-								<div class="col-sm-6 mb-3 mb-sm-0">
-										<label for="examplerole"></label>Role Name</label>
-                                    
-                                       
-                                            <input type="Enter a role name" class="form-control form-control-user" id="examplerole"
-                                                   placeholder="Enter a role name" required>
-                                            
-                                     
-                                    </div></br>
-                                    
-                                    
-                                   
-                                    <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                        Add Role
-                                    </a>
-                                    <hr>
-                                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                                        Cancel
-                                    </a>
-                                </form>
-                                <hr>
-                                
-                                
+                                                    </div>
+                                                    <!--end::Modal body-->
+                                                    <!--begin::Modal footer-->
+                                                    <div class="modal-footer flex-center">
+                                                        <!--begin::Button-->
+														<button type="reset" id="kt_modal_add_customer_cancel" class="btn btn-light me-3" style="background-color: red; color: white;">Discard</button>
+                                                        <!--end::Button-->
+                                                        <!--begin::Button-->
+                                                        <button type="submit" id="kt_modal_add_customer_submit" class="btn btn-primary">
+                                                            <span class="indicator-label">Add Role</span>
+                                                            <span class="indicator-progress">Please wait... 
+                                                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                                                        </button>
+                                                        <!--end::Button-->
+                                                    </div>
+                                                    <!--end::Modal footer-->
+                                                </form>
+                                            </div>
+                                            <!--end::Form-->
+                                    <!--end::Title-->
+                                </div>
+                                <!--end::Heading-->
                             </div>
+                            <!--end::Card body-->
                         </div>
-              
-
-                                                      
-                        
-
-
-                </div>
-            </div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
+                        <!--end::Card-->
+										
 									<!--begin::Modals-->
 									<!--begin::Modal - Customers - Add-->
 									<div class="modal fade" id="kt_modal_add_customer" tabindex="-1" aria-hidden="true">
@@ -5766,8 +5762,25 @@ License: For each use you must have a valid license purchased only from above li
 							<!--end::Content wrapper-->
 							<!--begin::Footer-->
 							<div id="kt_app_footer" class="app-footer d-flex flex-column flex-md-row align-items-center flex-center flex-md-stack">
-								
-								
+								<!--begin::Copyright-->
+								<div class="text-gray-900 order-2 order-md-1">
+									<span class="text-gray-500 fw-semibold me-1">2024&copy;</span>
+									<a href="https://keenthemes.com" target="_blank" class="text-gray-500 text-hover-primary">Keenthemes</a>
+								</div>
+								<!--end::Copyright-->
+								<!--begin::Menu-->
+								<ul class="menu menu-gray-500 menu-hover-primary fw-semibold order-1">
+									<li class="menu-item">
+										<a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
+									</li>
+									<li class="menu-item">
+										<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
+									</li>
+									<li class="menu-item">
+										<a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a>
+									</li>
+								</ul>
+								<!--end::Menu-->
 							</div>
 							<!--end::Footer-->
 						</div>
